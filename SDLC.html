@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarkvara arendusprotsess</title>
+</head>
+<body>
+    <h1>Mis on tarkvaraarenduse elutsükkel (SDLC - Software Development Life Cicle</h1>
+    <p>
+        Tarkvaraarendsuse elutsükkel on protsess mille käigus tehakse mingisugune tarvaratoode <br>
+        Saab kaa muuta juba olemasolevat tarkvaratoodet <br><br>
+    </p>
+    <h2>Mis on tarkvaratoode</h2>
+    <p>
+        Tarkvara toode on midagi mis saavutadakse tarvaraarendus elutsükkli käigus selle tulemina <br>
+        ning mida klient või kasutaja saab kasutada soovitud eesmärgi saavutamiseks või probleemi lahendamiseks <br>
+        tarkvara toode võib olla kas installeeritav programm, serrveri tarkvara driver või ükskõik mis muu <br>
+        rakendus mis kasutaja jaoks midagi ära teeb <br><br>
+    </p>
+    <h1>Mis on tarkvaraarenduse elutsükkli eesmärk?</h1>
+    <p>
+        Elutsükkli eesmärk on tagada et valmistatakse kvaliteetne toode, mis vastab kliendi nõuetele ning <br>
+        kasutaja vajadustele ja mõlema ootustele. Olgu need ootused siis funktsionaalsed või mittefunktsionaalsed <br>
+        Ideaalis on eesmärk tagada ka seda, et toode valmiks õigeaegselt, jääb eelarve piiridesse, töötab kasutaja <br>
+         jaoks efektiivselt, on võimeline itegeeruma kasutaja IT-tarustuga ja ei ole kulukas hooldada ning mida <br>
+         saab vajadusel ka täiendada. <br><br>
+    </p>
+    <h1>Milline näeb välja tüüpiline tarkvaraarenduse elutsükkel?</h1>
+    <p>
+        Tarkvaraarenduse elutsükkel on oma sisemuselt jaotatud etappideks. Olenevalt mudelist need erinevad <br>
+        aga üldiselt on igas mudelis olemas need 4 üldist etappi mingil kujul, kui otsene analoog vastavalt mudelile puudub. <br>
+        On olemas <b>Analüüs</b>, <b>Projekteerimine ja kavaldamine</b>, <b>Teostus</b> ning <b>hooldus.</b> <br><br>
+    </p>
+    <h2>Mida nendes etappides tehakse</h2><br>
+    <h3>Analüüsi etapp</h3>
+    <p>
+        Siin toimub tarkvaraprojektile vajalike nõeuete selgitamine. Selgitatakse välja mida tahab klient, ning <br>
+        mis lõppkasutajal vaja on, mid anad sellest ootavad. Selgitatakse välja funktsionaalsed nõuded (ehk mida päriselt <br>
+        päriselt toode tegema peaks) ja mittefunktsionaalsed nõuded (ehk kuidas välja, palju korraga kastuada br    
+        saab, millisel riistvara jooksma peab) <br> Näiteks oleks kalorikalkulaatoril sellised nõuded:
+        <table>
+            <tr>
+                <td>Funktsionaalsed nõuded</td>
+                <td>mittefunktsionaalsed nõuded</td>
+            </tr>            
+            <tr>
+                <td>Programm lubab kasutajal arvutada oma päevast tarbimist</td>
+                <td>Kasutajal on lihtne ja mugav programmiaknas navigeerida</td>
+            </tr>
+            <tr>
+                <td>Programm laseb kasutajal valida olemasolevaid tooteid</td>
+                <td>programm toetab vaegnägijaile programmi kasutust</td>
+            </tr>            
+            <tr>
+                <td>Kasutaja saab arvtada kaloerid kodus tehtud söögi kohta.</td>
+                <td>programm ei hõiva ebaloogiliselt palju kasutaja süsteemiressursse</td>
+            </tr>            
+            <tr>
+                <td>Programm saab telefonile märguandmeid hoiatuste ja eesmärkide saavutatuse kohta.</td>
+                <td>programm ei salvesta kastuaja isiklikku infot serveris.</td>
+            </tr>
+        </table> 
+    </p>
+    <h3>projekteerimise etapp:</h3> <br>
+    <p>
+        Siin määratakse ära süsteemi sisemine arhitektuur, osised, liidesed ja muud vajalikud omadused. <br>
+        selle töö tulemusena tekib arendatavast tarkvaraprojektist kavand. Selles etappis analüüsitakse <br>
+        eelnevas etappis paikapandud nõudeid ja kirjeldatakse selle abil struktuur. Projekti kavand ongi <br>
+        aluseks kuidas järgmises etapis projekti teotstama hakkatakse. <br>
+        mõnikord aga jaotatakse kavandamisetappi kaheks, kus üleüldine struktuur selgitatakse välja detailidest <br>
+        eraldi. Need jaotatakse siis omakorda eraldi kaheks alametapiks:
+        <ul>
+            <li>Arhitektuuri kavandamisetapp</li>
+            <li>Detailne kavandamisetapp</li>
+        </ul>
+        arhitektuu kavandamises keskendustatakse siis üleüldiselt struktuurile: määratakse ära erinevad kõrgema taseme <br>
+        komponendid, seosed teiste tarkvara osade vahel, jms. Detailse kavandamisetapis aga keskundutakse juba <br>
+        individuaalsetele komponendidel, funktsioonidele, objektidele, algorithmidele jms. <br>
+    </p>
+    <h3>Teostusetapp</h3>
+    <p>
+        Selles etapid, põhinedes eelnevalt paika pandud kavandile, algabki arendustöö mille käigus reaalselt nüüd <br>
+        tarkvaratoode valmis saadaksegi. Kuna eelnevalt kirjedati ka süsteemi pisidetailid, saad siin rakndada kogu <br>
+        arendusmeeskonna samaaegselt, kus iga liige või iga alamgrupp arendab ühte kirjeldatud detaili. Kogu projekt on eri <br>
+        osade kaudu paralleelselt arenduses. Selle etapi lõpupoole toimub ka estimine, otsitakse viga, nii koodis kui ka <br>
+        kasutaja vaatepunktist, ja tagastatakse, et valmistatav tarkvaratoode on üleüldiselt veavaba ning omab kõrget <br>
+        käitluskvaliteeti <br>
+    </p><br>
+    <h3>Hooldusetapp:</h3> <br>
+    <p>
+        Pärast lõpetatud testusetappi antakse toode kliendile a kastuajale üle, ning kõik mis toimub pärast üleandmist <br>
+        on hooldus. Hoolduse all saab edasisi parandata, toote optimeerimist ja monitooringut, mille abil <br>
+        tagastatakse, et tarkvaratoode jätkab tööd tõrgeteta. <br>
+        Hoolduseetapi raames saab klient ka esitada uusi nõudeid, mida projektile juurde arendada. See aitab tootel püsida <br>
+        konkurentsivõimelisena. <br>
+        Hooldusel on tähtis, et hooldav arendaja või meeskond oskaks lugeda ja aru saada eelnevate arendajate koodist. <br>
+        See aitab kaasa projekti haldamisel kulude kokkuhoiule ning lubab teostada hooldust kiiremini ja aitab lihtsamini <br>
+        muuta. <br>
+    </p>    <br>
+    <p>Tarkvaraarenduse elutüskklis on kõik eeltoodud etapid mingi kujul olemas.</p> <br> <br>
+    <h1>Erinevad tarkvaraarenduse elutüskkli mudelid</h1> <br>
+    <p>
+        <ul>
+            <li><a href="./SDLCModels/waterfall.html">Waterfall ehk kosemudel</a></li>
+            <li><a href=""></a>Incremental ehk inkrementaalne</li>
+            <li><a href="">Spriral ehk spiraalmudel</a></li>
+            <li><a href="">Prototyping ehk prototüüpimine</a></li>
+        </ul>
+    </p>
+</body>
+</html>
