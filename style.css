@@ -1,0 +1,168 @@
+/* ================================
+   🌌 SPACE THEMED STYLE.CSS
+   Works with basic HTML + tables
+================================ */
+
+/* Import futuristic Google Font (optional but recommended) */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&display=swap');
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body - Deep Space Background */
+body {
+    font-family: 'Orbitron', sans-serif;
+    background: radial-gradient(circle at top, #0b0f2a, #050510 70%);
+    color: #e0e6ff;
+    min-height: 100vh;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;      /* Centers horizontally */
+    justify-content: center;  /* Centers vertically */
+    text-align: center; 
+}
+
+/* Starfield Effect */
+body::before {
+    content: "";
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: url("https://www.transparenttextures.com/patterns/stardust.png");
+    opacity: 0.4;
+    z-index: -1;
+}
+
+/* Headings */
+h1, h2, h3 {
+    text-align: center;
+    color: #7df9ff;
+    text-shadow: 0 0 8px #00f7ff, 0 0 20px #0088ff;
+    margin: 20px 0;
+}
+
+/* Table Styling */
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background: rgba(10, 15, 40, 0.85);
+    border: 2px solid #00f7ff;
+    box-shadow: 0 0 20px rgba(0, 247, 255, 0.4);
+    backdrop-filter: blur(6px);
+}
+
+/* Table Headers */
+th {
+    background: linear-gradient(90deg, #111a44, #1b2b6b);
+    color: #7df9ff;
+    padding: 15px;
+    font-size: 18px;
+    border: 1px solid #00f7ff;
+    text-shadow: 0 0 5px #00f7ff;
+}
+
+/* Table Cells */
+td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid rgba(0, 247, 255, 0.3);
+    transition: 0.3s ease;
+}
+
+/* Hover Glow Effect */
+tr:hover td {
+    background-color: rgba(0, 247, 255, 0.1);
+    box-shadow: inset 0 0 10px #00f7ff;
+    transform: scale(1.01);
+}
+
+/* Base link style */
+a {
+    color: #00f7ff;             /* bright cyan */
+    text-decoration: none;       /* remove underline */
+    font-weight: bold;
+    font-size: 18px;
+    position: relative;
+    transition: 0.3s ease;
+    text-shadow: 0 0 5px #00f7ff, 0 0 10px #00f7ff;
+}
+
+/* Add a glowing underline on hover */
+a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #00f7ff;
+    box-shadow: 0 0 8px #00f7ff;
+    transition: width 0.3s ease;
+    margin-top: 4px;
+}
+
+a:hover::after {
+    width: 100%;
+}
+
+/* Optional: make link color brighter on hover */
+a:hover {
+    color: #7df9ff;
+    text-shadow: 0 0 10px #00f7ff, 0 0 20px #7df9ff;
+}
+
+
+/* Buttons */
+button {
+    background: linear-gradient(45deg, #00f7ff, #0066ff);
+    border: none;
+    padding: 10px 20px;
+    color: #fff;
+    font-family: 'Orbitron', sans-serif;
+    cursor: pointer;
+    border-radius: 6px;
+    box-shadow: 0 0 10px #00f7ff;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 20px #00f7ff;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #7df9ff;
+    text-shadow: 0 0 6px #00f7ff;
+}
+/* Remove default bullets */
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+/* Add custom space-themed bullet */
+ul li {
+    position: relative;
+    padding-left: 30px;
+    margin: 10px 0;
+    font-size: 18px;
+    color: #7df9ff;
+}
+
+/* Use a glowing star as the bullet */
+ul li::before {
+    content: "★"; /* You can also use emojis like 🚀, 🌑, ✨ */
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #00f7ff;
+    text-shadow: 0 0 5px #00f7ff, 0 0 10px #00f7ff, 0 0 15px #00f7ff;
+    font-size: 20px;
+}
